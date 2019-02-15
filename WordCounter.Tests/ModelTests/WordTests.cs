@@ -7,10 +7,13 @@ namespace WordCounter.Tests
     public class WordTests
     {
         [TestMethod]
-        public void IsMatch_IsOneLetterMatchToOneLetterSentence_True()
+        public void MatchCounter_IsOneLetterMatchToOneLetterSentence_1()
         {
-            Word testWord = new Word();
-            Assert.AreEqual(true, testWord.IsMatch("t", "t"));
+            int wordCount = 0;
+            string testUserWord = "t";
+            string testUserSentence = "i saw a t and shit my pants";
+            Word testWord = new Word(wordCount, testUserWord, testUserSentence);
+            Assert.AreEqual(4, testWord.MatchCounter(wordCount, testUserWord, testUserSentence));
         }
     }
 }
