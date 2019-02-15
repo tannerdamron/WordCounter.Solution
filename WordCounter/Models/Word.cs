@@ -12,7 +12,7 @@ namespace WordCounter
             _userWord = userWord;
             _userSentence = userSentence;
         }
-        public int  MatchCounter(int wordCount, string userWord, string userSentence)
+        public int MatchCounter(int wordCount, string userWord, string userSentence)
         {
             string[] splitWords = userSentence.Split(' ');
             foreach (var singleWord in splitWords)
