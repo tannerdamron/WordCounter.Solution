@@ -10,7 +10,7 @@ namespace WordCounter.Tests
         public void IsMatch_IsOneLetterMatchToOneLetterSentence_True()
         {
             Word testWord = new Word();
-            Assert.AreEqual(true, testWord.IsMatch("t"));
+            Assert.AreEqual(true, testWord.IsMatch("t", "t"));
         }
     }
 }

@@ -54,4 +54,7 @@ A program that takes a word and a sentence from the user, and checks how many ti
 * C#
 * .NET
 
+### GitHub Repository Link
+https://github.com/tannerdamron/csharp-WordCounter
+
 Copyright (c) 2019 Tanner Damron.

@@ -2,9 +2,16 @@ namespace WordCounter
 {
     public class Word
     {
-        public bool IsMatch(string userWord)
+        public bool IsMatch(string userWord, string userSentence)
         {
-            return false;
+            if (userWord == userSentence)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
