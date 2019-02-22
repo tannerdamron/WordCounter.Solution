@@ -35,7 +35,7 @@ namespace WordCounter.Tests
             WordCounterController controller = new WordCounterController();
 
             //Act
-            IActionResult view = controller.Create(0, "t", "t");
+            IActionResult view = controller.Create("t", "t");
 
             //Assert
             Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
@@ -46,7 +46,7 @@ namespace WordCounter.Tests
         {
             //Arrange
             WordCounterController controller = new WordCounterController();
-            RedirectToActionResult actionResult = controller.Create(0, "t", "t") as RedirectToActionResult;
+            RedirectToActionResult actionResult = controller.Create("t", "t") as RedirectToActionResult;
 
             //Act
             string result = actionResult.ActionName;

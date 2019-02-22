@@ -16,8 +16,6 @@ namespace WordCounter.Controllers
         {
             int wordCount = 0;
             Word newWord = new Word(wordCount, userWord, userSentence);
-            // newWord.SetUserWord(userWord);
-            // newWord.SetUserSentence(userSentence);
             newWord.MatchCounter(wordCount, userWord, userSentence);
             return RedirectToAction("Index", newWord);
         }
