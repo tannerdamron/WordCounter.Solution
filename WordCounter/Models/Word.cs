@@ -23,7 +23,8 @@ namespace WordCounter.Models
                     wordCount++;
                 }
             }
-            return wordCount;
+            _wordCount = wordCount;
+            return _wordCount;
         }
 
         public static int GetWordCount()
@@ -39,11 +40,6 @@ namespace WordCounter.Models
         public static string GetUserSentence()
         {
             return _userSentence;
-        }
-
-        public void SetWordCount(int wordCount)
-        {
-            _wordCount = wordCount;
         }
     }
 }
