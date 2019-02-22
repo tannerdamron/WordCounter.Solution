@@ -43,9 +43,17 @@ A program that takes a word and a sentence from the user, and checks how many ti
 
 
 ### Setup Instructions
+Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them.
+
 * Clone repository
 * Add it to your desktop using "git clone""(repository link).""
 * Open in preferred text editor to see all code used
+* To run the program, first navigate to the directory "WordCounter"
+* Run the "dotnet restore" command
+* Then use "dotnet build" command
+* Then use "dotnet run" command
+* Then go to "http://localhost:5000" to see webpage
+* To run the tests, use these commands from the directory "WordCounter.Solution": $ cd WordCounter.Tests, $ dotnet test
 
 ### Known Bugs
 * No known bugs
@@ -55,6 +63,6 @@ A program that takes a word and a sentence from the user, and checks how many ti
 * .NET
 
 ### GitHub Repository Link
-https://github.com/tannerdamron/csharp-WordCounter
+https://github.com/tannerdamron/WordCounter.Solution
 
 Copyright (c) 2019 Tanner Damron.
