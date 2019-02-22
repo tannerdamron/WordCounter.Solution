@@ -7,8 +7,10 @@
     <p>You havent started a game yet!</p>
 }
 
-<h2>Your Original Word: @GetUserWord</h2>
-<h2>Your Original Sentence: @GetUserSentence</h2>
-<h2>Your word appears @GetWordCount times in your sentence!</h2>
-
+@if (ModelExpressionProvider.Count != 0)
+{
+    <h2>Your Original Word: @GetUserWord</h2>
+    <h2>Your Original Sentence: @GetUserSentence</h2>
+    <h2>Your word appears @GetWordCount times in your sentence!</h2>
+}
 <a href="/count/new">Start a new game!</a>
