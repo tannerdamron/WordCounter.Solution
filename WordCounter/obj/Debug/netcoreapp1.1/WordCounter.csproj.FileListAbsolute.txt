@@ -5,3 +5,5 @@ C:\Users\csh america\desktop\wordcounter.solution\WordCounter\obj\Debug\netcorea
 C:\Users\csh america\desktop\wordcounter.solution\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.AssemblyInfo.cs
 C:\Users\csh america\desktop\wordcounter.solution\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.dll
 C:\Users\csh america\desktop\wordcounter.solution\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\csh america\desktop\wordcounter.solution\WordCounter\bin\Debug\netcoreapp1.1\WordCounter.runtimeconfig.json
+C:\Users\csh america\desktop\wordcounter.solution\WordCounter\bin\Debug\netcoreapp1.1\WordCounter.runtimeconfig.dev.json
