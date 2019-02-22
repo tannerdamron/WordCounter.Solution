@@ -12,9 +12,11 @@ namespace WordCounter.Controllers
         }
 
         [HttpPost("/count")]
-        public ActionResult Create(int wordCount, string userWord, string userSentence)
+        public ActionResult Create(string userWord, string userSentence)
         {
+            int wordCount = 0;
             Word newWord = new Word(wordCount, userWord, userSentence);
+            newWord.MatchCounter(wordCount, userWord, userSentence);
             return RedirectToAction("Index");
         }
 

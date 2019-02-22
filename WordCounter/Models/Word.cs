@@ -2,9 +2,9 @@ namespace WordCounter.Models
 {
     public class Word
     {
-        private int _wordCount;
-        private string _userWord;
-        private string _userSentence;
+        private static int _wordCount;
+        private static string _userWord;
+        private static string _userSentence;
 
         public Word(int wordCount, string userWord, string userSentence)
         {
@@ -26,19 +26,24 @@ namespace WordCounter.Models
             return wordCount;
         }
 
-        public int GetWordCount()
+        public static int GetWordCount()
         {
             return _wordCount;
         }
 
-        public string GetUserWord()
+        public static string GetUserWord()
         {
             return _userWord;
         }
 
-        public string GetUserSentence()
+        public static string GetUserSentence()
         {
             return _userSentence;
+        }
+
+        public void SetWordCount(int wordCount)
+        {
+            _wordCount = wordCount;
         }
     }
 }

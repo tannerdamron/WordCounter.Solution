@@ -1,0 +1,16 @@
+@using WordCounter.Models;
+
+<h1>Word Counter Game</h1>
+
+@if (Word.GetWordCount() == 0)
+{
+    <p>You havent started a game yet!</p>
+}
+
+@if (Word.GetWordCount() != 0)
+{
+    <h2>Your Original Word: @Model.GetUserWord</h2>
+    <h2>Your Original Sentence: @Model.GetUserSentence</h2>
+    <h2>Your word appears @Model.GetWordCount times in your sentence!</h2>
+}
+<a href="/count/new">Start a new game!</a>
