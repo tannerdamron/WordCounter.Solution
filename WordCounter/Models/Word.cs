@@ -2,9 +2,9 @@ namespace WordCounter
 {
     public class Word
     {
-        private int _wordCount;
-        private string _userWord;
-        private string _userSentence;
+        public int _wordCount;
+        public string _userWord;
+        public string _userSentence;
 
         public Word(int wordCount, string userWord, string userSentence)
         {
@@ -20,10 +20,6 @@ namespace WordCounter
                 if (userWord == singleWord)
                 {
                     wordCount++;
-                }
-                else
-                {
-                    
                 }
             }
             return wordCount;
