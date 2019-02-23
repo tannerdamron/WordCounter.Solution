@@ -56,7 +56,7 @@ Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them.
 * To run the tests, use these commands from the directory "WordCounter.Solution": $ cd WordCounter.Tests, $ dotnet test
 
 ### Known Bugs
-* No known bugs
+* Program doesn't account for case sensitivity
 
 ### Languages/Libraries Used
 * C#

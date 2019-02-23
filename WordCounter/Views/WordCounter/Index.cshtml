@@ -1,17 +1,23 @@
 @using WordCounter.Models;
 
-<h1>Word Counter Game</h1>
-
-@if (Word.GetWordCount() == 0)
-{
-    <p>You havent started a game yet!</p>
+@{
+  Layout = "_Layout";
 }
 
-@if (Word.GetWordCount() != 0)
-{
-    <h2>Your Original Word: @Word.GetUserWord()</h2>
-    <h2>Your Original Sentence: @Word.GetUserSentence()</h2>
-    <h2>Your word appears @Word.GetWordCount() times in your sentence!</h2>
-}
+<div class="container">
+    <h1>Word Counter Game</h1>
 
-<a href="/count/new">Start a new game!</a>
+    @if (Word.GetWordCount() == 0)
+    {
+        <p>You have no matches</p>
+    }
+
+    @if (Word.GetWordCount() != 0)
+    {
+        <h2>Your Original Word: @Word.GetUserWord()</h2>
+        <h2>Your Original Sentence: @Word.GetUserSentence()</h2>
+        <h2>Your word appears @Word.GetWordCount() times in your sentence!</h2>
+    }
+
+    <h2><a href="/count/new">Start a new game!</a></h2>
+</div>

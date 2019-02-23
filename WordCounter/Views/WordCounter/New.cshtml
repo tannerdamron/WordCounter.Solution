@@ -1,10 +1,15 @@
+@{
+  Layout = "_Layout";
+}
 
-<h1>Enter a word and a sentence to see how many times the word appears in the sentence</h1>
-<form action="/count" method="post">
-    <label for="userWord">Add a singular word:</label>
-    <input id="userWord" name="userWord" type="text">
-    <label for="userSentence">Add a sentence:</label>
-    <input id="userSentence" name="userSentence" type="text">
-    <button type="submit">Get Matches</button>
-</form>
+<div class="container">
+    <h1>Enter a word and a sentence to see how many times the word appears in the sentence</h1>
+    <form action="/count" method="post">
+        <label for="userWord">Add a singular word:</label>
+        <input id="userWord" name="userWord" type="text">
+        <label for="userSentence">Add a sentence:</label>
+        <input id="userSentence" name="userSentence" type="text">
+        <button type="submit">Get Matches</button>
+    </form>
+</div>
 
